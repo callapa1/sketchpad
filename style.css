@@ -1,0 +1,28 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  text-align: center;
+}
+div{
+  display: flex;
+  border: solid rgba(0, 0, 0, 0.25);
+  border-width: 0.01em;
+  width: auto;
+  height: auto;
+  flex: 1 1 6.25%;
+}
+#container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 640px;
+  height: 640px;
+  margin: 0px auto;
+}
+
+.whiteGrid{
+  background-color: white;
+}
+
+.blackGrid{
+  background-color: black;
+}
