@@ -42,8 +42,15 @@ function removeOldAndCreateNew(){
     className.replace('blackGrid', 'whiteGrid');
   }
 
-  var newGridSize = Number(prompt("How many squares per side do you "+
-                                  "want in your new grid? (1-100)") || '');
+  var newGridSize = newValidNumber()
+
+  function newValidNumber() {
+    number = 0;
+    while (number < 1 || number > 100) {
+      number = Number(prompt("How many squares per side do you want in your new grid? (1-100)") || '');
+    }
+    return number
+  }
   
   let divs = container.getElementsByTagName('div');
 
